@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: Inter, sans-serif;
+}
+
+/* Layout */
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  padding: 18px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+}
+
+.brand h1 {
+  margin: 0;
+  color: var(--teal);
+}
+
+.tag {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.app-main {
+  padding: 28px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.welcome-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+/* Timetable */
+.tt-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.tt-section {
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.tt-section-header {
+  padding: 14px 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tt-table-wrap {
+  padding: 12px;
+}
+
+.tt-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tt-table thead th {
+  padding: 12px;
+  color: var(--muted);
+  text-align: left;
+}
+
+.tt-table tbody tr {
+  border-top: 1px solid #e5e7eb;
+}
+
+.tt-cell {
+  padding: 10px;
+}
+
+.entry {
+  display: flex;
+  gap: 8px;
+}
+
+.sub {
+  background: var(--glass);
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: var(--teal);
+  font-weight: bold;
+}
+
+.teach {
+  font-weight: 600;
+}
+
+.room {
+  color: var(--muted);
+}
+
+.free {
+  color: var(--muted);
+}
+
+.app-footer {
+  padding: 14px;
+  text-align: center;
+  color: var(--muted);
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (min-width: 900px) {
+  .tt-sections {
+    grid-template-columns: 1fr 1fr;
+  }
+}
